@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Login Page</title>
+	</head>
+	<body>
+		<form name="login" action="index_submit" method="get" accept-charset="utf-8">
+    			<ul>
+        			<li>
+					<label for="username">Username</label>
+        				<input type="text" name="username" placeholder="Username" required>
+				</li>
+       				<li>
+					<label for="password">Password</label>
+        				<input type="password" name="password" placeholder="password" required>
+				</li>
+				<li>
+					<form action="upload.php" method="post" enctype="multipart/form-data">
+					    Select Certificate File:
+					    <input type="file" name="fileToUpload" id="fileToUpload" required>
+					</form>
+				</li>
+        			<input type="submit" value="Login"></li>
+    			</ul>
+		</form>
+		<div id="new account">
+			<a href="form.html">Create New Account</a>		
+		</div>
+	</body>
+</html>
